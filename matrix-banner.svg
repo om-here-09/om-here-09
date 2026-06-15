@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="auto">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#0d1b1e"/>
+      <stop offset="100%" stop-color="#020405"/>
+    </radialGradient>
+    <linearGradient id="fadeMask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="25%" stop-color="white" stop-opacity="1"/>
+      <stop offset="75%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rainMask">
+      <rect width="1000" height="220" fill="url(#fadeMask)"/>
+    </mask>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="220" fill="url(#bgGlow)"/>
+
+  <!-- Subtle cyan grid -->
+  <g stroke="#03f7e2" stroke-opacity="0.05">
+    <line x1="0" y1="0" x2="0" y2="220"/><line x1="40" y1="0" x2="40" y2="220"/><line x1="80" y1="0" x2="80" y2="220"/><line x1="120" y1="0" x2="120" y2="220"/><line x1="160" y1="0" x2="160" y2="220"/><line x1="200" y1="0" x2="200" y2="220"/><line x1="240" y1="0" x2="240" y2="220"/><line x1="280" y1="0" x2="280" y2="220"/><line x1="320" y1="0" x2="320" y2="220"/><line x1="360" y1="0" x2="360" y2="220"/><line x1="400" y1="0" x2="400" y2="220"/><line x1="440" y1="0" x2="440" y2="220"/><line x1="480" y1="0" x2="480" y2="220"/><line x1="520" y1="0" x2="520" y2="220"/><line x1="560" y1="0" x2="560" y2="220"/><line x1="600" y1="0" x2="600" y2="220"/><line x1="640" y1="0" x2="640" y2="220"/><line x1="680" y1="0" x2="680" y2="220"/><line x1="720" y1="0" x2="720" y2="220"/><line x1="760" y1="0" x2="760" y2="220"/><line x1="800" y1="0" x2="800" y2="220"/><line x1="840" y1="0" x2="840" y2="220"/><line x1="880" y1="0" x2="880" y2="220"/><line x1="920" y1="0" x2="920" y2="220"/><line x1="960" y1="0" x2="960" y2="220"/>
+    <line x1="0" y1="0" x2="1000" y2="0"/><line x1="0" y1="40" x2="1000" y2="40"/><line x1="0" y1="80" x2="1000" y2="80"/><line x1="0" y1="120" x2="1000" y2="120"/><line x1="0" y1="160" x2="1000" y2="160"/><line x1="0" y1="200" x2="1000" y2="200"/>
+  </g>
+
+  <!-- Matrix rain -->
+  <g mask="url(#rainMask)" opacity="0.55">
+    
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-112"><tspan x="6" dy="0" fill="#caffe8" fill-opacity="1">ウ</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.89">@</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.78">オ</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.66">ニ</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.55">+</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.44">イ</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.32">$</tspan><tspan x="6" dy="14" fill="#00ff41" fill-opacity="0.21">シ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="7.29s" begin="-2.88s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-84"><tspan x="32" dy="0" fill="#caffe8" fill-opacity="1">エ</tspan><tspan x="32" dy="14" fill="#00ff41" fill-opacity="0.85">%</tspan><tspan x="32" dy="14" fill="#00ff41" fill-opacity="0.7">ハ</tspan><tspan x="32" dy="14" fill="#00ff41" fill-opacity="0.55">イ</tspan><tspan x="32" dy="14" fill="#00ff41" fill-opacity="0.4">&</tspan><tspan x="32" dy="14" fill="#00ff41" fill-opacity="0.25">カ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.84s" begin="-1.61s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="58" dy="0" fill="#caffe8" fill-opacity="1">&</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.87">+</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.74">ネ</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.61">イ</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.49">ス</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.36">ア</tspan><tspan x="58" dy="14" fill="#00ff41" fill-opacity="0.23">%</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.02s" begin="-3.51s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="84" dy="0" fill="#caffe8" fill-opacity="1">&</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.87">ツ</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.74">%</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.61">\</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.49">コ</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.36">オ</tspan><tspan x="84" dy="14" fill="#00ff41" fill-opacity="0.23">+</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.66s" begin="-0.67s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-180"><tspan x="110" dy="0" fill="#caffe8" fill-opacity="1">ウ</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.91">&</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.82">イ</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.73">*</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.64">シ</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.55">ホ</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.46">\</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.37">@</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.28">ハ</tspan><tspan x="110" dy="18" fill="#00ff41" fill-opacity="0.19">テ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.06s" begin="-2.26s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-144"><tspan x="136" dy="0" fill="#caffe8" fill-opacity="1">セ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.9">コ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.8">セ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.7">エ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.6">&</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.5">ツ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.4">#</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.3">ホ</tspan><tspan x="136" dy="16" fill="#00ff41" fill-opacity="0.2">ト</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.84s" begin="-2.65s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-154"><tspan x="162" dy="0" fill="#caffe8" fill-opacity="1">カ</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.92">$</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.84">ノ</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.75">ケ</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.67">ト</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.59">ク</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.51">ホ</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.43">ノ</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.35">ア</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.26">/</tspan><tspan x="162" dy="14" fill="#00ff41" fill-opacity="0.18">ウ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.3s" begin="-3.23s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-160"><tspan x="188" dy="0" fill="#caffe8" fill-opacity="1">ト</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.91">ナ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.82">=</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.73">ホ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.64">+</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.55">フ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.46">ウ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.37">エ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.28">タ</tspan><tspan x="188" dy="16" fill="#00ff41" fill-opacity="0.19">ヘ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.79s" begin="-5.07s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-198"><tspan x="214" dy="0" fill="#caffe8" fill-opacity="1">ツ</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.92">></tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.84">&</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.75">\</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.67">ヒ</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.59">チ</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.51">ヌ</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.43">/</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.35">ナ</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.26">1</tspan><tspan x="214" dy="18" fill="#00ff41" fill-opacity="0.18">フ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.16s" begin="-0.37s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-112"><tspan x="240" dy="0" fill="#caffe8" fill-opacity="1">シ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.89">チ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.78">キ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.66">セ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.55">ネ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.44">ネ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.32">ホ</tspan><tspan x="240" dy="14" fill="#00ff41" fill-opacity="0.21">エ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.17s" begin="-0.49s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="266" dy="0" fill="#caffe8" fill-opacity="1">ハ</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.87">%</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.74">タ</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.61">ノ</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.49">ナ</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.36">\</tspan><tspan x="266" dy="14" fill="#00ff41" fill-opacity="0.23">ヌ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.3s" begin="-2.91s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="292" dy="0" fill="#caffe8" fill-opacity="1">/</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.87">ス</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.74">0</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.61">ホ</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.49">+</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.36">コ</tspan><tspan x="292" dy="14" fill="#00ff41" fill-opacity="0.23">ソ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.1s" begin="-0.72s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-128"><tspan x="318" dy="0" fill="#caffe8" fill-opacity="1">*</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.89">&</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.78">テ</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.66">キ</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.55">$</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.44">*</tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.32">></tspan><tspan x="318" dy="16" fill="#00ff41" fill-opacity="0.21">\</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.52s" begin="-1.47s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-198"><tspan x="344" dy="0" fill="#caffe8" fill-opacity="1">%</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.92">ネ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.84">ネ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.75">ネ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.67">ネ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.59">オ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.51">ヘ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.43"><</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.35">ネ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.26">イ</tspan><tspan x="344" dy="18" fill="#00ff41" fill-opacity="0.18">サ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.72s" begin="-3.35s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-84"><tspan x="370" dy="0" fill="#caffe8" fill-opacity="1">ト</tspan><tspan x="370" dy="14" fill="#00ff41" fill-opacity="0.85">=</tspan><tspan x="370" dy="14" fill="#00ff41" fill-opacity="0.7">イ</tspan><tspan x="370" dy="14" fill="#00ff41" fill-opacity="0.55">オ</tspan><tspan x="370" dy="14" fill="#00ff41" fill-opacity="0.4">0</tspan><tspan x="370" dy="14" fill="#00ff41" fill-opacity="0.25">&</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="7.44s" begin="-3.28s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-126"><tspan x="396" dy="0" fill="#caffe8" fill-opacity="1">1</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.87">ウ</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.74">シ</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.61">*</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.49">ヌ</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.36">ク</tspan><tspan x="396" dy="18" fill="#00ff41" fill-opacity="0.23"><</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.65s" begin="-5.36s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-128"><tspan x="422" dy="0" fill="#caffe8" fill-opacity="1">カ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.89">カ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.78">ホ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.66">フ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.55">ヘ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.44">ヘ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.32">ツ</tspan><tspan x="422" dy="16" fill="#00ff41" fill-opacity="0.21">エ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="7.32s" begin="-4.41s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-112"><tspan x="448" dy="0" fill="#caffe8" fill-opacity="1">ヘ</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.87">ケ</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.74">#</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.61">1</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.49">シ</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.36">#</tspan><tspan x="448" dy="16" fill="#00ff41" fill-opacity="0.23">ニ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.91s" begin="-1.34s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-126"><tspan x="474" dy="0" fill="#caffe8" fill-opacity="1">ツ</tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.87">></tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.74">エ</tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.61">ソ</tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.49">#</tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.36">ニ</tspan><tspan x="474" dy="18" fill="#00ff41" fill-opacity="0.23">ケ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.26s" begin="-5.72s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-144"><tspan x="500" dy="0" fill="#caffe8" fill-opacity="1">ト</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.89"><</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.78">ス</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.66">*</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.55">サ</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.44">セ</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.32">ネ</tspan><tspan x="500" dy="18" fill="#00ff41" fill-opacity="0.21">ス</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.59s" begin="-3.51s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="526" dy="0" fill="#caffe8" fill-opacity="1">1</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.87">タ</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.74">ヘ</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.61">ソ</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.49">サ</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.36">=</tspan><tspan x="526" dy="14" fill="#00ff41" fill-opacity="0.23">ナ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.57s" begin="-1.98s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-144"><tspan x="552" dy="0" fill="#caffe8" fill-opacity="1">ニ</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.9">エ</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.8">ス</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.7">オ</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.6">ス</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.5">ヘ</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.4">サ</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.3">ト</tspan><tspan x="552" dy="16" fill="#00ff41" fill-opacity="0.2">シ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.73s" begin="-4.87s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-126"><tspan x="578" dy="0" fill="#caffe8" fill-opacity="1">ヘ</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.9">></tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.8">ナ</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.7">></tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.6">エ</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.5">/</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.4">カ</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.3">ヌ</tspan><tspan x="578" dy="14" fill="#00ff41" fill-opacity="0.2">サ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.0s" begin="-5.4s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-162"><tspan x="604" dy="0" fill="#caffe8" fill-opacity="1">ト</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.9">エ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.8">ネ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.7">フ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.6">ネ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.5">エ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.4">ケ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.3">ケ</tspan><tspan x="604" dy="18" fill="#00ff41" fill-opacity="0.2">キ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="7.06s" begin="-3.06s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-108"><tspan x="630" dy="0" fill="#caffe8" fill-opacity="1">ク</tspan><tspan x="630" dy="18" fill="#00ff41" fill-opacity="0.85">*</tspan><tspan x="630" dy="18" fill="#00ff41" fill-opacity="0.7">=</tspan><tspan x="630" dy="18" fill="#00ff41" fill-opacity="0.55">ヘ</tspan><tspan x="630" dy="18" fill="#00ff41" fill-opacity="0.4">/</tspan><tspan x="630" dy="18" fill="#00ff41" fill-opacity="0.25">ナ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.1s" begin="-3.71s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-98"><tspan x="656" dy="0" fill="#caffe8" fill-opacity="1">></tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.87">オ</tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.74">#</tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.61">キ</tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.49">ハ</tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.36">サ</tspan><tspan x="656" dy="14" fill="#00ff41" fill-opacity="0.23">シ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.69s" begin="-0.75s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-84"><tspan x="682" dy="0" fill="#caffe8" fill-opacity="1">+</tspan><tspan x="682" dy="14" fill="#00ff41" fill-opacity="0.85">テ</tspan><tspan x="682" dy="14" fill="#00ff41" fill-opacity="0.7">ソ</tspan><tspan x="682" dy="14" fill="#00ff41" fill-opacity="0.55">@</tspan><tspan x="682" dy="14" fill="#00ff41" fill-opacity="0.4">ノ</tspan><tspan x="682" dy="14" fill="#00ff41" fill-opacity="0.25">キ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.51s" begin="-1.32s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-96"><tspan x="708" dy="0" fill="#caffe8" fill-opacity="1">/</tspan><tspan x="708" dy="16" fill="#00ff41" fill-opacity="0.85">+</tspan><tspan x="708" dy="16" fill="#00ff41" fill-opacity="0.7">#</tspan><tspan x="708" dy="16" fill="#00ff41" fill-opacity="0.55">ノ</tspan><tspan x="708" dy="16" fill="#00ff41" fill-opacity="0.4">$</tspan><tspan x="708" dy="16" fill="#00ff41" fill-opacity="0.25">キ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="7.14s" begin="-2.53s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-160"><tspan x="734" dy="0" fill="#caffe8" fill-opacity="1">コ</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.91">=</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.82">0</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.73">ク</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.64">コ</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.55">ク</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.46">ヘ</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.37">*</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.28">カ</tspan><tspan x="734" dy="16" fill="#00ff41" fill-opacity="0.19">%</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.11s" begin="-2.1s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-108"><tspan x="760" dy="0" fill="#caffe8" fill-opacity="1">ヘ</tspan><tspan x="760" dy="18" fill="#00ff41" fill-opacity="0.85">オ</tspan><tspan x="760" dy="18" fill="#00ff41" fill-opacity="0.7">%</tspan><tspan x="760" dy="18" fill="#00ff41" fill-opacity="0.55">イ</tspan><tspan x="760" dy="18" fill="#00ff41" fill-opacity="0.4">セ</tspan><tspan x="760" dy="18" fill="#00ff41" fill-opacity="0.25">サ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.8s" begin="-2.49s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-128"><tspan x="786" dy="0" fill="#caffe8" fill-opacity="1">%</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.89">1</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.78">ウ</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.66">ヒ</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.55">テ</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.44">*</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.32">$</tspan><tspan x="786" dy="16" fill="#00ff41" fill-opacity="0.21">=</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.67s" begin="-0.36s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-180"><tspan x="812" dy="0" fill="#caffe8" fill-opacity="1">@</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.91">ヘ</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.82">$</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.73">セ</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.64">#</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.55">ソ</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.46">%</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.37">サ</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.28">ヒ</tspan><tspan x="812" dy="18" fill="#00ff41" fill-opacity="0.19">キ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.3s" begin="-1.19s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-126"><tspan x="838" dy="0" fill="#caffe8" fill-opacity="1">/</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.9">セ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.8">ハ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.7">ウ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.6">シ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.5">/</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.4">ツ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.3">カ</tspan><tspan x="838" dy="14" fill="#00ff41" fill-opacity="0.2">ク</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="3.99s" begin="-1.76s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-176"><tspan x="864" dy="0" fill="#caffe8" fill-opacity="1">キ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.92">フ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.84">ス</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.75">オ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.67">ネ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.59">ホ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.51">ケ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.43">/</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.35">ス</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.26">ケ</tspan><tspan x="864" dy="16" fill="#00ff41" fill-opacity="0.18">ハ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.07s" begin="-2.22s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="16" y="-160"><tspan x="890" dy="0" fill="#caffe8" fill-opacity="1">テ</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.91">エ</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.82">ニ</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.73">1</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.64">ト</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.55">%</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.46">フ</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.37">ヒ</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.28">1</tspan><tspan x="890" dy="16" fill="#00ff41" fill-opacity="0.19">ヌ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.12s" begin="-2.16s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-112"><tspan x="916" dy="0" fill="#caffe8" fill-opacity="1">カ</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.89">ス</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.78">オ</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.66">エ</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.55">ソ</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.44">タ</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.32">ア</tspan><tspan x="916" dy="14" fill="#00ff41" fill-opacity="0.21">コ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="5.57s" begin="-1.65s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="18" y="-144"><tspan x="942" dy="0" fill="#caffe8" fill-opacity="1">ソ</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.89">ネ</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.78">ク</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.66">@</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.55">$</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.44">&</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.32">ホ</tspan><tspan x="942" dy="18" fill="#00ff41" fill-opacity="0.21">テ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="6.52s" begin="-5.34s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <text font-family="Courier New, monospace" font-size="14" y="-84"><tspan x="968" dy="0" fill="#caffe8" fill-opacity="1">ハ</tspan><tspan x="968" dy="14" fill="#00ff41" fill-opacity="0.85">ウ</tspan><tspan x="968" dy="14" fill="#00ff41" fill-opacity="0.7">タ</tspan><tspan x="968" dy="14" fill="#00ff41" fill-opacity="0.55">1</tspan><tspan x="968" dy="14" fill="#00ff41" fill-opacity="0.4"><</tspan><tspan x="968" dy="14" fill="#00ff41" fill-opacity="0.25">エ</tspan></text>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,-260" to="0,280" dur="4.62s" begin="-3.69s" repeatCount="indefinite"/>
+  </g>
+  </g>
+
+  <!-- Scanline glow bar -->
+  <rect x="0" y="0" width="1000" height="3" fill="#03f7e2" opacity="0.5">
+    <animate attributeName="y" values="0;220;0" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Name overlay -->
+  <g text-anchor="middle" font-family="Courier New, monospace">
+    <text x="500" y="108" font-size="74" font-weight="900" letter-spacing="14"
+          fill="#03f7e2" filter="url(#glow)">
+      OM
+      <animate attributeName="opacity" values="1;1;0.35;1;1;0.55;1" keyTimes="0;0.42;0.44;0.46;0.78;0.80;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="150" font-size="20" letter-spacing="4"
+          fill="#00ff88" filter="url(#glowSoft)" opacity="0.9">
+      root@cybersecurity:~# whoami
+    </text>
+    <text x="500" y="178" font-size="14" letter-spacing="3"
+          fill="#7df9c3" opacity="0.6">
+      &gt; Cybersecurity Student | Ethical Hacker | Developer
+    </text>
+  </g>
+</svg>
