@@ -178,7 +178,7 @@ A Passionate CyberSecurity Enthusiast from India
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-##  GitHub Stats
+<!---##  GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ImOm09&show_icons=true&theme=radical" alt="tubakhxn GitHub Stats"/>
@@ -188,7 +188,7 @@ A Passionate CyberSecurity Enthusiast from India
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ImOm09&theme=github_dark"/>
 </p>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"> --->
 
 ## 🏆 Certifications
 <div style="display: flex; justify-content: space-between; align-items: center;">
