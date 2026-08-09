@@ -1,6 +1,6 @@
 <!-- Matrix Background Animation -->
 [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://www.youtube.com/watch?v=SDkAGkd4NLc)
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=om-here-09&label=Profile%20views&color=0e75b6&style=flat" alt="om-here-09" /> </p>
 <h1 align="center">⚡ OM | Cybersecurity Student & Developer</h1>
 
 <h3 align="center">
