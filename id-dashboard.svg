@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 600" width="1280" height="600" role="img" aria-label="Developer ID and dashboard">
+  <title>Developer ID and dashboard</title>
+  <desc>A swinging holographic ID badge beside a dashboard: repos, stars, forks, followers, most-starred projects, community reach and current focus.</desc>
+  <defs>
+    <style>
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+      @keyframes drop {
+        0% { transform: translateY(-640px) rotate(0deg); }
+        22% { transform: translateY(0) rotate(0deg); }
+        42% { transform: rotate(3.4deg); }
+        62% { transform: rotate(-2.2deg); }
+        80% { transform: rotate(1.2deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes sway {
+        0%, 100% { transform: rotate(-1.9deg); }
+        50% { transform: rotate(1.9deg); }
+      }
+      .swing {
+        transform-box: fill-box;
+        transform-origin: 50% 0%;
+        animation: drop 2.6s cubic-bezier(.3,1,.5,1) forwards, sway 6s ease-in-out 2.6s infinite;
+      }
+      .fu { animation: fadeUp 0.7s cubic-bezier(.2,.8,.2,1) both; }
+      .pulsing { animation: pulse 2s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; opacity: 1 !important; transform: none !important; }
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d111d"/>
+      <stop offset="100%" stop-color="#080a12"/>
+    </linearGradient>
+
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c162e"/>
+      <stop offset="50%" stop-color="#0f1123"/>
+      <stop offset="100%" stop-color="#1a0f24"/>
+    </linearGradient>
+
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b2e"/>
+      <stop offset="100%" stop-color="#0d111d"/>
+    </linearGradient>
+
+    <!-- Clip path for avatar -->
+    <clipPath id="avatarClip">
+      <rect x="175" y="180" width="130" height="150" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="600" rx="16" fill="url(#bgGlow)" stroke="#1f293d" stroke-width="2"/>
+
+  <!-- DASHBOARD SECTION (RIGHT) -->
+  <g transform="translate(420, 40)">
+    <!-- Header -->
+    <text x="0" y="30" fill="#a855f7" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="1.5">// DEVELOPER DASHBOARD</text>
+    <text x="0" y="65" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold">Profile at a glance</text>
+
+    <!-- Live Badge -->
+    <g transform="translate(640, 35)">
+      <rect x="0" y="0" width="110" height="30" rx="15" fill="#062e24" stroke="#10b981" stroke-width="1"/>
+      <circle cx="18" cy="15" r="4" fill="#10b981" class="pulsing"/>
+      <text x="30" y="19" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1">LIVE • GITHUB</text>
+    </g>
+
+    <!-- Top Stats Row -->
+    <!-- Public Repos -->
+    <g transform="translate(0, 100)">
+      <rect width="170" height="90" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="20" y="45" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold">8</text>
+      <text x="20" y="68" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold" letter-spacing="1">PUBLIC REPOS</text>
+      <path d="M135 25 h15 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 h-15 a2 2 0 0 1 -2 -2 v-12 a2 2 0 0 1 2 -2 z" fill="none" stroke="#06b6d4" stroke-width="2"/>
+    </g>
+
+    <!-- Total Stars -->
+    <g transform="translate(185, 100)">
+      <rect width="170" height="90" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="20" y="45" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold">54</text>
+      <text x="20" y="68" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold" letter-spacing="1">TOTAL STARS</text>
+      <polygon points="145,25 148,32 155,33 150,38 151,45 145,41 139,45 140,38 135,33 142,32" fill="none" stroke="#eab308" stroke-width="2"/>
+    </g>
+
+    <!-- Forks -->
+    <g transform="translate(370, 100)">
+      <rect width="170" height="90" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="20" y="45" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold">23</text>
+      <text x="20" y="68" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold" letter-spacing="1">FORKS</text>
+      <path d="M140 25 v8 a5 5 0 0 0 5 5 h5 a5 5 0 0 0 5 -5 v-8 M145 38 v7" fill="none" stroke="#a855f7" stroke-width="2"/>
+    </g>
+
+    <!-- Followers -->
+    <g transform="translate(555, 100)">
+      <rect width="170" height="90" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="20" y="45" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold">25</text>
+      <text x="20" y="68" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold" letter-spacing="1">FOLLOWERS</text>
+      <circle cx="145" cy="28" r="4" fill="none" stroke="#ec4899" stroke-width="2"/>
+      <path d="M137 42 a8 8 0 0 1 16 0" fill="none" stroke="#ec4899" stroke-width="2"/>
+    </g>
+
+    <!-- Most-Starred Projects Section -->
+    <g transform="translate(0, 210)">
+      <rect width="425" height="270" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="25" y="35" fill="#64748b" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1">MOST-STARRED PROJECTS</text>
+
+      <!-- Bar 1 -->
+      <text x="25" y="75" fill="#94a3b8" font-family="monospace" font-size="12">Naruto - Sage Mode</text>
+      <rect x="180" y="63" width="180" height="14" rx="7" fill="url(#barGrad1)"/>
+      <text x="370" y="75" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">25</text>
+
+      <!-- Bar 2 -->
+      <text x="25" y="115" fill="#94a3b8" font-family="monospace" font-size="12">Zoro - King of Hell</text>
+      <rect x="180" y="103" width="65" height="14" rx="7" fill="url(#barGrad1)"/>
+      <text x="255" y="115" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">9</text>
+
+      <!-- Bar 3 -->
+      <text x="25" y="155" fill="#94a3b8" font-family="monospace" font-size="12">Demon Slayer</text>
+      <rect x="180" y="143" width="55" height="14" rx="7" fill="url(#barGrad1)"/>
+      <text x="245" y="155" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">8</text>
+
+      <!-- Bar 4 -->
+      <text x="25" y="195" fill="#94a3b8" font-family="monospace" font-size="12">JJK - Sukuna</text>
+      <rect x="180" y="183" width="55" height="14" rx="7" fill="url(#barGrad1)"/>
+      <text x="245" y="195" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">8</text>
+
+      <!-- Bar 5 -->
+      <text x="25" y="235" fill="#94a3b8" font-family="monospace" font-size="12">One Piece 3D</text>
+      <rect x="180" y="223" width="20" height="14" rx="7" fill="url(#barGrad1)"/>
+      <text x="210" y="235" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">2</text>
+    </g>
+
+    <!-- Community & Info Side Cards -->
+    <!-- Community Card -->
+    <g transform="translate(445, 210)">
+      <rect width="280" height="125" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+      <text x="50" y="30" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold" letter-spacing="1">COMMUNITY</text>
+      <circle cx="32" cy="26" r="8" fill="none" stroke="#ec4899" stroke-width="2"/>
+
+      <text x="25" y="70" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="bold">4.7K</text>
+      <text x="25" y="85" fill="#64748b" font-family="monospace" font-size="9" font-weight="bold">IG FOLLOWERS</text>
+
+      <text x="145" y="70" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="bold">2.7M</text>
+      <text x="145" y="85" fill="#64748b" font-family="monospace" font-size="9" font-weight="bold">VIEWS / 30 DAYS</text>
+
+      <text x="25" y="110" fill="#475569" font-family="monospace" font-size="10">@meghamittal0920</text>
+    </g>
+
+    <!-- Focus / Building Card -->
+    <g transform="translate(445, 350)">
+      <rect width="280" height="130" rx="12" fill="url(#cardGlow)" stroke="#1e293b"/>
+
+      <text x="25" y="25" fill="#06b6d4" font-family="monospace" font-size="9" font-weight="bold" letter-spacing="1">BUILDING</text>
+      <text x="25" y="40" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">Cinematic anime web experiences</text>
+
+      <text x="25" y="65" fill="#a855f7" font-family="monospace" font-size="9" font-weight="bold" letter-spacing="1">EXPLORING</text>
+      <text x="25" y="80" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">3D on the web &amp; AI pair-programming</text>
+
+      <text x="25" y="105" fill="#ec4899" font-family="monospace" font-size="9" font-weight="bold" letter-spacing="1">FUEL</text>
+      <text x="25" y="120" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">Coffee, ramen &amp; morning runs</text>
+    </g>
+  </g>
+
+  <!-- SWINGING ID BADGE (LEFT) -->
+  <g class="swing" transform="translate(80, 0)">
+    <!-- Lanyard Strap & Clip -->
+    <rect x="193" y="0" width="14" height="90" fill="#7e22ce"/>
+    <text x="200" y="45" fill="#ffffff" font-family="monospace" font-size="8" font-weight="bold" transform="rotate(90 200 45)" letter-spacing="2">R.DEV • FRONT</text>
+
+    <!-- Metal Clip -->
+    <rect x="185" y="85" width="30" height="15" rx="3" fill="#94a3b8"/>
+    <circle cx="200" cy="108" r="6" fill="none" stroke="#94a3b8" stroke-width="3"/>
+
+    <!-- ID Card Container -->
+    <g transform="translate(70, 115)">
+      <!-- Main Card Body -->
+      <rect x="0" y="0" width="260" height="380" rx="20" fill="url(#badgeBg)" stroke="#3b0764" stroke-width="3"/>
+
+      <!-- Card Top Slot -->
+      <rect x="105" y="12" width="50" height="8" rx="4" fill="#0f172a"/>
+
+      <!-- Header Label -->
+      <text x="20" y="40" fill="#06b6d4" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1">DEVELOPER ID</text>
+      <text x="210" y="40" fill="#475569" font-family="monospace" font-size="10">v2.0</text>
+
+      <!-- SIM / Microchip Image -->
+      <rect x="25" y="65" width="32" height="24" rx="4" fill="#eab308" opacity="0.8"/>
+      <path d="M25 77 h32 M41 65 v24" stroke="#713f12" stroke-width="1"/>
+
+      <!-- Avatar Photo Box -->
+      <rect x="75" y="65" width="130" height="150" rx="16" fill="#1e1b4b" stroke="#a855f7" stroke-width="2"/>
+      
+      <!-- Placeholder SVG Avatar -->
+      <g clip-path="url(#avatarClip)">
+        <circle cx="140" cy="120" r="40" fill="#f472b6"/>
+        <path d="M100 190 Q140 140 180 190 Z" fill="#38bdf8"/>
+        <!-- Face details placeholder -->
+        <circle cx="140" cy="115" r="22" fill="#fbcfe8"/>
+      </g>
+
+      <!-- Name & Title -->
+      <text x="130" y="245" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Megha Mittal</text>
+      <text x="130" y="263" fill="#a855f7" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle" letter-spacing="1">FRONTEND DEVELOPER</text>
+
+      <!-- Extra Info Grid -->
+      <text x="25" y="295" fill="#64748b" font-family="monospace" font-size="8">BASE</text>
+      <text x="25" y="308" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">Noida, IN</text>
+
+      <text x="150" y="295" fill="#64748b" font-family="monospace" font-size="8">TEAM</text>
+      <text x="150" y="308" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">Wiley</text>
+
+      <text x="25" y="325" fill="#64748b" font-family="monospace" font-size="8">ID</text>
+      <text x="25" y="338" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">MM-0920</text>
+
+      <text x="150" y="325" fill="#64748b" font-family="monospace" font-size="8">SINCE</text>
+      <text x="150" y="338" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="bold">2022</text>
+
+      <!-- Barcode / Bottom Pill -->
+      <rect x="20" y="350" width="220" height="18" rx="9" fill="#062e24" stroke="#10b981" stroke-width="1"/>
+      <circle cx="32" cy="359" r="3" fill="#10b981"/>
+      <text x="42" y="362" fill="#10b981" font-family="monospace" font-size="9" font-weight="bold" letter-spacing="1">OPEN TO COLLAB</text>
+      <text x="230" y="362" fill="#475569" font-family="monospace" font-size="7" text-anchor="end">@meghamittal0920</text>
+    </g>
+  </g>
+</svg>
