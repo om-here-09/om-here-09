@@ -57,12 +57,17 @@ A Passionate CyberSecurity Enthusiast from India
 
 </p>
 
-<!-- 🪪 DEVELOPER ID + DASHBOARD 
+<!-- Animated Gif -->
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p> <br>
+
+<!--- DEVELOPER ID --->
 <div align="center">
 <img src="./id-dashboard.svg?v=1" alt="Developer ID and dashboard" width="100%"/>
 
-<br/><br/>
-</div> -->
+<br>
+</div> 
 
 <!-- Animated Gif -->
 <p align="center">
