@@ -209,20 +209,22 @@ A Passionate CyberSecurity Enthusiast from India
 <br>
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <a href="https://www.credly.com/earner/earned/badge/a8aa0703-67d5-48bc-8f6a-226122834e5a" target="_blank">
-    <img src="https://images.credly.com/size/340x340/images/441578ec-c0f3-46cc-95fc-86b27e90cf4f/image.png" alt="CyberSecurity Certification" height="300">
+    <img src="https://images.credly.com/size/340x340/images/441578ec-c0f3-46cc-95fc-86b27e90cf4f/image.png" alt="CyberSecurity Certification" height="130">
   </a>
 
   <a href="https://www.credly.com/earner/earned/badge/21e1eef3-8164-408f-af34-0705691738da" target="_blank">
-    <img src="https://images.credly.com/size/340x340/images/7fa09e71-4149-4d59-9066-14fc8a3e0f39/blob" alt="AWS Academy Graduate" height="300">
+    <img src="https://images.credly.com/size/340x340/images/7fa09e71-4149-4d59-9066-14fc8a3e0f39/blob" alt="AWS Academy Graduate" height="130">
   </a>
 
    <a href="https://www.credly.com/earner/earned/badge/b47aec93-1fa2-4d28-8f28-9c463809c712" target="_blank">
-    <img src="https://images.credly.com/size/340x340/images/7f7ea828-a10d-44f8-8baa-58a9c1af7671/blob" alt="AWS Academy Graduate - Cloud Security Foundations - Training Badge" height="300">
+    <img src="https://images.credly.com/size/340x340/images/7f7ea828-a10d-44f8-8baa-58a9c1af7671/blob" alt="AWS Academy Graduate - Cloud Security Foundations - Training Badge" height="130">
   </a>
 
 </div> 
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+
 ##  HackerRank Certifications
 
 <p align="center">
